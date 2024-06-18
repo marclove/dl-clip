@@ -1,6 +1,10 @@
 # .github/workflows/release.yml
 name: Rust Release binary
-            
+
+permissions:
+  actions: write
+  packages: write
+
 on:
   release:
     types: [created]
